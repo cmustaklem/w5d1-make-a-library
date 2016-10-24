@@ -10,7 +10,7 @@
 
 // console.log(md.setAttr('.navbar', 'style', 'background-color:red'))
 
-us
+
 
 console.log(md.one('.navbar'))
 console.log(md.all('.navbar'))
@@ -22,3 +22,6 @@ console.log(md.setAttr('.navbar', 'style', 'background-color:red'))
 console.log(md.getAttr('.navbar', 'style'))
 console.log(md.getHTML('title'))
 console.log(md.setHTML('title', 'Sopranos'))
+console.log(md.ajax('http://swapi.co/api/', function(data){
+    console.log(data)
+}))

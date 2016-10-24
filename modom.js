@@ -42,6 +42,12 @@
         return document.querySelector(attribute).innerHTML=value
     }
 
+    var ajax = function(url, success) {
+        fetch(url)
+        .then(response => response.json())
+        .then(success)
+    }
+
     window.md = {
         // capitalizeFirst: capitalizeFirst,
         // capitalizeAll: capitalizeAll,
@@ -60,6 +66,7 @@
         setAttr: setAttr,
         getHTML: getHTML,
         setHTML: setHTML,
+        ajax: ajax,
     }
 
 }())

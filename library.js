@@ -24,6 +24,12 @@
         return test
     }
 
+    var ajax = function(url, success) {
+        fetch(url)
+        .then(response => reponse.json())
+        .then(success)
+    }
+
     window.dog = {
         capitalizeFirst: capitalizeFirst,
         capitalizeAll: capitalizeAll,
